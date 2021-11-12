@@ -12,9 +12,11 @@
 
     <body>
         <form:form action="processForm" modelAttribute="student">
-        Firstname : <form:input path="firstName" /> <br>
-        Lastname : <form:input path="lastName" /> <br>
+        Firstname : <form:input path="firstName" /> <br><br>
+        Lastname : <form:input path="lastName" /> <br><br>
         <form:errors path="lastName" cssClass="error" />
+        Age: <form:input path="age" /> <br>
+        <form:errors path="age" cssClass="error" />
 
         <input type = "submit" value = "Submit" />
         </form:form>

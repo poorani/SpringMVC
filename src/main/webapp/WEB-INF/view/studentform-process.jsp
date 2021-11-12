@@ -4,6 +4,8 @@
         the student first name is : ${student.firstName}
         <br><br>
         the student lastname is : ${student.lastName}
+        <br> <br>
+        The student age is : ${student.age}
 
     </body>
 
