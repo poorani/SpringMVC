@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 
 @Controller
+//Controller lever request Mapping
+@RequestMapping("/hello/")
 public class HelloWordController {
 
     //controller method to show the form
