@@ -17,6 +17,8 @@
         <form:errors path="lastName" cssClass="error" />
         Age: <form:input path="age" /> <br>
         <form:errors path="age" cssClass="error" />
+        Postal Code: <form:input path="postalCode" /> <br>
+        <form:errors path="postalCode" cssClass="error" />
 
         <input type = "submit" value = "Submit" />
         </form:form>
