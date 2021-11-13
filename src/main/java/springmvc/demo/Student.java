@@ -1,5 +1,7 @@
 package springmvc.demo;
 
+import springmvc.validation.PostalCode;
+
 import javax.validation.constraints.*;
 
 public class Student {
@@ -14,7 +16,8 @@ public class Student {
     @Max(value=16,message="age of student should be lesser tha 16 years")
     public Integer age;
 
-    @Pattern(regexp="^[0-9]{5}", message="only 5 digits allowed")
+    @Pattern(regexp="^[A-Z0-9]{9}", message="only 9 char allowed")
+    @PostalCode(value="PBOX",message = "must start with PBOX")
     public String postalCode;
 
     public Student(){
