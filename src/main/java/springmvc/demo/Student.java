@@ -9,9 +9,10 @@ public class Student {
     @Size(min = 1, message = "required")
     public String lastName;
 
+    @NotNull(message="required")
     @Min(value=5,message="age of student must be greater then 5 years")
     @Max(value=16,message="age of student should be lesser tha 16 years")
-    public int age;
+    public Integer age;
 
     @Pattern(regexp="^[0-9]{5}", message="only 5 digits allowed")
     public String postalCode;
@@ -36,11 +37,11 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
